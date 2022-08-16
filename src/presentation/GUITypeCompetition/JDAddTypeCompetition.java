@@ -22,7 +22,7 @@ public class JDAddTypeCompetition extends javax.swing.JDialog {
     public JDAddTypeCompetition(java.awt.Frame parent, String titre) {
         super(parent, titre, true);
         initComponents();
-        getRootPane().setDefaultButton(jButton1);
+        getRootPane().setDefaultButton(BoutonAnnuler);
         setLocation(parent.getX()+parent.getWidth()/3, parent.getY()+parent.getHeight()/3);
         setVisible(true);
         initComponents();
@@ -37,39 +37,39 @@ public class JDAddTypeCompetition extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        LabelAjoutTypeCompetition = new javax.swing.JLabel();
+        LabelTypeCompetition = new javax.swing.JLabel();
+        TextFieldTypeCompetition = new javax.swing.JTextField();
+        BoutonAnnuler = new javax.swing.JButton();
+        BoutonConfirmation = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Ajout Type Competition");
-        jLabel1.setMaximumSize(new java.awt.Dimension(130, 14));
-        jLabel1.setMinimumSize(new java.awt.Dimension(130, 14));
-        jLabel1.setPreferredSize(new java.awt.Dimension(130, 14));
+        LabelAjoutTypeCompetition.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelAjoutTypeCompetition.setText("Ajout Type Competition");
+        LabelAjoutTypeCompetition.setMaximumSize(new java.awt.Dimension(130, 14));
+        LabelAjoutTypeCompetition.setMinimumSize(new java.awt.Dimension(130, 14));
+        LabelAjoutTypeCompetition.setPreferredSize(new java.awt.Dimension(130, 14));
 
-        jLabel2.setText("Type Competition:");
+        LabelTypeCompetition.setText("Type Competition:");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        TextFieldTypeCompetition.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                TextFieldTypeCompetitionActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Annuler");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BoutonAnnuler.setText("Annuler");
+        BoutonAnnuler.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BoutonAnnulerActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Confirmer");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BoutonConfirmation.setText("Confirmer");
+        BoutonConfirmation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BoutonConfirmationActionPerformed(evt);
             }
         });
 
@@ -79,54 +79,54 @@ public class JDAddTypeCompetition extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jLabel2)
+                .addComponent(LabelTypeCompetition)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(LabelAjoutTypeCompetition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton2)
+                                .addComponent(BoutonConfirmation)
                                 .addGap(43, 43, 43)
-                                .addComponent(jButton1))
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(BoutonAnnuler))
+                            .addComponent(TextFieldTypeCompetition, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(78, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelAjoutTypeCompetition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelTypeCompetition)
+                    .addComponent(TextFieldTypeCompetition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(BoutonAnnuler)
+                    .addComponent(BoutonConfirmation))
                 .addGap(59, 59, 59))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void TextFieldTypeCompetitionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldTypeCompetitionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_TextFieldTypeCompetitionActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BoutonAnnulerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAnnulerActionPerformed
         // TODO add your handling code here: Annuler
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BoutonAnnulerActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BoutonConfirmationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonConfirmationActionPerformed
         // TODO add your handling code here: Confirmer
         
          TypeCompetition typeComp = new TypeCompetition();
-         typeComp.setNomType(jTextField1.getText());
+         typeComp.setNomType(TextFieldTypeCompetition.getText());
          
          boolean ok = daoTypeCompetition.insertTypeCompetition(typeComp);
         
@@ -134,7 +134,7 @@ public class JDAddTypeCompetition extends javax.swing.JDialog {
            JOptionPane.showMessageDialog(null,"Insertion impossible !","Avertissement",JOptionPane.ERROR_MESSAGE);
         
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BoutonConfirmationActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,11 +179,11 @@ public class JDAddTypeCompetition extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton BoutonAnnuler;
+    private javax.swing.JButton BoutonConfirmation;
+    private javax.swing.JLabel LabelAjoutTypeCompetition;
+    private javax.swing.JLabel LabelTypeCompetition;
+    private javax.swing.JTextField TextFieldTypeCompetition;
     // End of variables declaration//GEN-END:variables
 private DAOTypeCompetition daoTypeCompetition = Factory.getDAOTypeCompetition();
 }

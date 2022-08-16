@@ -38,77 +38,77 @@ public class JIFStage extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new JTable(myModel);
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        TableStage = new JTable(myModel);
+        BoutonMenu = new javax.swing.JButton();
+        LabelStage = new javax.swing.JLabel();
+        BoutonAjoutStage = new javax.swing.JButton();
+        BoutonSuppressionStage = new javax.swing.JButton();
+        BoutonModificationStage = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(700, 500));
 
-        jTable1.setModel(new model.TableModelStage(daoStage.selectStage()));
-        jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jTable1.setShowGrid(true);
+        TableStage.setModel(new model.TableModelStage(daoStage.selectStage()));
+        TableStage.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        TableStage.setShowGrid(true);
 
         /* initialisation des largeurs de colonnes */
         javax.swing.table.TableColumn column = null;
-        column = jTable1.getColumnModel().getColumn(0);
+        column = TableStage.getColumnModel().getColumn(0);
         column.setPreferredWidth(50);
-        column = jTable1.getColumnModel().getColumn(1);
+        column = TableStage.getColumnModel().getColumn(1);
         column.setPreferredWidth(150);
-        column = jTable1.getColumnModel().getColumn(2);
+        column = TableStage.getColumnModel().getColumn(2);
         column.setPreferredWidth(150);
-        column = jTable1.getColumnModel().getColumn(3);
+        column = TableStage.getColumnModel().getColumn(3);
         column.setPreferredWidth(150);
-        column = jTable1.getColumnModel().getColumn(4);
+        column = TableStage.getColumnModel().getColumn(4);
         column.setPreferredWidth(150);
-        column = jTable1.getColumnModel().getColumn(5);
+        column = TableStage.getColumnModel().getColumn(5);
         column.setPreferredWidth(150);
-        column = jTable1.getColumnModel().getColumn(6);
+        column = TableStage.getColumnModel().getColumn(6);
         column.setPreferredWidth(150);
-        column = jTable1.getColumnModel().getColumn(7);
+        column = TableStage.getColumnModel().getColumn(7);
         column.setPreferredWidth(150);
 
         /* jTableApp.setRowSorter(new TableRowSorter(myModel)); */
 
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(TableStage);
 
-        jButton1.setText("Menu");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BoutonMenu.setText("Menu");
+        BoutonMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BoutonMenuActionPerformed(evt);
             }
         });
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Stages");
-        jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        LabelStage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelStage.setText("Stages");
+        LabelStage.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 255, 0));
-        jButton2.setText("+");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BoutonAjoutStage.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonAjoutStage.setForeground(new java.awt.Color(0, 255, 0));
+        BoutonAjoutStage.setText("+");
+        BoutonAjoutStage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BoutonAjoutStageActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 0, 0));
-        jButton3.setText("-");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        BoutonSuppressionStage.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonSuppressionStage.setForeground(new java.awt.Color(255, 0, 0));
+        BoutonSuppressionStage.setText("-");
+        BoutonSuppressionStage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                BoutonSuppressionStageActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 102, 0));
-        jButton4.setText("Modifier");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        BoutonModificationStage.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonModificationStage.setForeground(new java.awt.Color(255, 102, 0));
+        BoutonModificationStage.setText("Modifier");
+        BoutonModificationStage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                BoutonModificationStageActionPerformed(evt);
             }
         });
 
@@ -118,18 +118,18 @@ public class JIFStage extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(129, 129, 129)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LabelStage, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(BoutonMenu)
                         .addGap(103, 103, 103)
-                        .addComponent(jButton2)
+                        .addComponent(BoutonAjoutStage)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3)
+                        .addComponent(BoutonSuppressionStage)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4))
+                        .addComponent(BoutonModificationStage))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 84, Short.MAX_VALUE))
         );
@@ -137,29 +137,29 @@ public class JIFStage extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(LabelStage)
                 .addGap(3, 3, 3)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jButton4)
+                    .addComponent(BoutonMenu)
+                    .addComponent(BoutonModificationStage)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton2)
-                        .addComponent(jButton3)))
+                        .addComponent(BoutonAjoutStage)
+                        .addComponent(BoutonSuppressionStage)))
                 .addContainerGap(111, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BoutonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonMenuActionPerformed
         // bouton Menu
         this.dispose();
       
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BoutonMenuActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BoutonAjoutStageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAjoutStageActionPerformed
         // TODO add your handling code here:
         // récupère la JFrame parente
         JFrame parent = (JFrame)(this.getDesktopPane().getTopLevelAncestor());
@@ -176,25 +176,27 @@ public class JIFStage extends javax.swing.JInternalFrame {
             
        
         System.out.println(" ajout test");
-    }//GEN-LAST:event_jButton2ActionPerformed
+        refreshModel();
+    }//GEN-LAST:event_BoutonAjoutStageActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void BoutonSuppressionStageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSuppressionStageActionPerformed
         // TODO add your handling code here:
         
         //supprimer
-         if (jTable1.getSelectedRow() == -1)
+         if (TableStage.getSelectedRow() == -1)
             JOptionPane.showMessageDialog(null,"Sélectionnez d'abord une ligne svp !","Avertissement",JOptionPane.ERROR_MESSAGE);
         else {
             int rep = JOptionPane.showConfirmDialog(this,"Voulez-vous vraiment supprimer " +
-                    myModel.getValueAt(jTable1.convertRowIndexToModel(jTable1.getSelectedRow()),0) + " ?", "Confirmation", JOptionPane.YES_NO_OPTION);
+                    myModel.getValueAt(TableStage.convertRowIndexToModel(TableStage.getSelectedRow()),0) + " ?", "Confirmation", JOptionPane.YES_NO_OPTION);
             if (rep == JOptionPane.YES_OPTION)
-                daoStage.deleteStage((int)myModel.getValueAt(jTable1.convertRowIndexToModel(jTable1.getSelectedRow()),0));
+                daoStage.deleteStage((int)myModel.getValueAt(TableStage.convertRowIndexToModel(TableStage.getSelectedRow()),0));
             // après la suppression : rafraîchir les données en relisant la BD
             refreshModel();
+            this.refreshModel();
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_BoutonSuppressionStageActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void BoutonModificationStageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonModificationStageActionPerformed
         // TODO add your handling code here:
     /**    
         Stage staModif;
@@ -221,11 +223,11 @@ public class JIFStage extends javax.swing.JInternalFrame {
         * 
         * 
         **/
-    if (jTable1.getSelectedRow() == -1)
+    if (TableStage.getSelectedRow() == -1)
             JOptionPane.showMessageDialog(this,"Sélectionnez d'abord une ligne svp !","Avertissement",JOptionPane.ERROR_MESSAGE);
         else {
             // renvoie l'objet Appareil à passer en paramètre
-            Stage sta =myModel.getMyList(jTable1.convertRowIndexToModel(jTable1.getSelectedRow()));
+            Stage sta =myModel.getMyList(TableStage.convertRowIndexToModel(TableStage.getSelectedRow()));
                       
             // récupère la JFrame parente
             JFrame parent = (JFrame)(this.getDesktopPane().getTopLevelAncestor());
@@ -235,22 +237,21 @@ public class JIFStage extends javax.swing.JInternalFrame {
             refreshModel();
             System.out.println(" modif test");
         }
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_BoutonModificationStageActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton BoutonAjoutStage;
+    private javax.swing.JButton BoutonMenu;
+    private javax.swing.JButton BoutonModificationStage;
+    private javax.swing.JButton BoutonSuppressionStage;
+    private javax.swing.JLabel LabelStage;
+    private javax.swing.JTable TableStage;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
    private void refreshModel(){
     myModel.setMyList(daoStage.selectStage());
-    
-    
+    myModel.getMyList().forEach(model->System.out.println(model));
     }
     
     private DAOStage daoStage = Factory.getDAOStage();

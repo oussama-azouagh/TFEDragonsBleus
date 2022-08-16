@@ -32,8 +32,8 @@ public class TableModelCompetition extends javax.swing.table.AbstractTableModel 
         {
             case 0 :    return comp.getIdCompetition();
             case 1 :    return comp.getNom();
-            case 2 :    return comp.getDateEvenementBE();
-            case 3 :    return comp.getDateLimiteInscriptionBE();
+            case 2 :    return comp.getDateEvenement();
+            case 3 :    return comp.getDateLimiteInscription();
             case 4 :    return comp.getidTypeCompetition().getNomType();
             case 5 :    return comp.getPrixInscription();
             case 6 :    return comp.getLieu();

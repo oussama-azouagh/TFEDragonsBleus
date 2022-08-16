@@ -35,7 +35,7 @@ public class TableModelCours extends javax.swing.table.AbstractTableModel {
             case 2 :    return cou.getHeureDebut();
             case 3 :    return cou.getHeureFin();
             case 4 :    return cou.getJours();
-            case 5 :    return cou.getIdLocal().getNomLocal();
+            case 5 :    return cou.getIdLocal().getNomLocal();// meme nom que cours
             
             default :   return null;
         }

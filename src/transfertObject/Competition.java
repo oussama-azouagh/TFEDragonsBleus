@@ -76,6 +76,7 @@ private int duree;
         return idTypeCompetition;
     }
 
+    //setID should be TypeCompetition idTypeCompetition
     public void setidTypeCompetition(TypeCompetition idTypeCompetition) {
         this.idTypeCompetition = idTypeCompetition;
     }
@@ -170,6 +171,11 @@ private int duree;
           tmp = "'" + dateParser.format(this.dateLimiteInscription) + "'";
           }
         return tmp;
+    }
+
+    @Override
+    public String toString() {
+        return "Competition{" + "idCompetition=" + idCompetition + ", nom=" + nom + ", dateEvenement=" + dateEvenement + ", dateLimiteInscription=" + dateLimiteInscription + ", idTypeCompetition=" + idTypeCompetition + ", prixInscription=" + prixInscription + ", lieu=" + lieu + ", duree=" + duree + '}';
     }
   
 

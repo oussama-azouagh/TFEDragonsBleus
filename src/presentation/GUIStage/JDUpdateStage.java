@@ -28,7 +28,7 @@ public class JDUpdateStage extends javax.swing.JDialog {
         super(parent, titre, true);
         initComponents();
         fillComponents(sta);
-        getRootPane().setDefaultButton(jButton1);
+        getRootPane().setDefaultButton(BoutonConfirmer);
         setLocation(parent.getX()+parent.getWidth()/3, parent.getY()+parent.getHeight()/3);
         setVisible(true);
     }
@@ -41,168 +41,168 @@ public class JDUpdateStage extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        LabelModificationStage = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        LabelAncienNomStage = new javax.swing.JLabel();
+        LabelNouveauNomStage = new javax.swing.JLabel();
+        LabelAncienDateEvenement = new javax.swing.JLabel();
+        LabelNouvelleDateEvenement = new javax.swing.JLabel();
+        LabelAncienneDateInscription = new javax.swing.JLabel();
+        LabelNouvelleDateInscription = new javax.swing.JLabel();
+        LabelAncienPrix = new javax.swing.JLabel();
+        LabelNouveauPrix = new javax.swing.JLabel();
+        LabelAncienLieuEvenement = new javax.swing.JLabel();
+        LabelNouveauLieuEvenement = new javax.swing.JLabel();
+        LabelAncienNombreParticipants = new javax.swing.JLabel();
+        LabelNouveauNombreParticipants = new javax.swing.JLabel();
+        LabelAncienneDureeStage = new javax.swing.JLabel();
+        LabelNouvelleDureeStage = new javax.swing.JLabel();
+        TextFieldAncienNomStage = new javax.swing.JTextField();
+        TextFieldNouveauNomStage = new javax.swing.JTextField();
+        TextFieldAncienneDateEvenement = new javax.swing.JTextField();
+        TextFieldNouvelleDateEvenement = new javax.swing.JTextField();
+        TextFieldAncienneDateInscription = new javax.swing.JTextField();
+        TextFieldNouvelleDateInscription = new javax.swing.JTextField();
+        TextFieldAncienPrixInscription = new javax.swing.JTextField();
+        TextFieldNouveauPrixInscription = new javax.swing.JTextField();
+        TextFieldAncienLieuEvenement = new javax.swing.JTextField();
+        TextFieldNouveauLieuEvenement = new javax.swing.JTextField();
+        TextFieldAncienNombreParticipants = new javax.swing.JTextField();
+        TextFieldNouveauNombreParticipants = new javax.swing.JTextField();
+        TextFieldAncienneDureeStage = new javax.swing.JTextField();
+        TextFieldNouvelleDureeStage = new javax.swing.JTextField();
+        BoutonConfirmer = new javax.swing.JButton();
+        BoutonAnnuler = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(500, 645));
         setMinimumSize(new java.awt.Dimension(500, 645));
         setPreferredSize(new java.awt.Dimension(500, 645));
 
-        jLabel1.setText("Modification Stage");
+        LabelModificationStage.setText("Modification Stage");
 
         jPanel1.setMaximumSize(new java.awt.Dimension(250, 22));
         jPanel1.setMinimumSize(new java.awt.Dimension(250, 22));
         jPanel1.setPreferredSize(new java.awt.Dimension(498, 516));
 
-        jLabel2.setText("Ancien Nom Stage");
+        LabelAncienNomStage.setText("Ancien Nom Stage");
 
-        jLabel3.setText("Nouveau Nom Stage");
+        LabelNouveauNomStage.setText("Nouveau Nom Stage");
 
-        jLabel4.setText("Ancienne Date Evenement");
+        LabelAncienDateEvenement.setText("Ancienne Date Evenement");
 
-        jLabel5.setText("Nouvelle Date Evenement");
+        LabelNouvelleDateEvenement.setText("Nouvelle Date Evenement");
 
-        jLabel6.setText("Ancienne Date Inscription");
+        LabelAncienneDateInscription.setText("Ancienne Date Inscription");
 
-        jLabel7.setText("Nouvelle Date Inscription");
+        LabelNouvelleDateInscription.setText("Nouvelle Date Inscription");
 
-        jLabel8.setText("Ancien Prix Inscription ");
+        LabelAncienPrix.setText("Ancien Prix Inscription ");
 
-        jLabel9.setText("Nouveau Prix Inscription");
+        LabelNouveauPrix.setText("Nouveau Prix Inscription");
 
-        jLabel10.setText("Ancien Lieu de L'Evenement");
+        LabelAncienLieuEvenement.setText("Ancien Lieu de L'Evenement");
 
-        jLabel11.setText("Nouveau Lieu de L'Evenement");
+        LabelNouveauLieuEvenement.setText("Nouveau Lieu de L'Evenement");
 
-        jLabel12.setText("Ancien Nombre de Participants");
+        LabelAncienNombreParticipants.setText("Ancien Nombre de Participants");
 
-        jLabel13.setText("Nouveau Nombre de Participants");
+        LabelNouveauNombreParticipants.setText("Nouveau Nombre de Participants");
 
-        jLabel14.setText("Ancienne Durée de Stage");
+        LabelAncienneDureeStage.setText("Ancienne Durée de Stage");
 
-        jLabel15.setText("Nouvelle Durée de Stage");
+        LabelNouvelleDureeStage.setText("Nouvelle Durée de Stage");
 
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setEnabled(false);
-        jTextField1.setFocusable(false);
-        jTextField1.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField1.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField1.setOpaque(false);
-        jTextField1.setPreferredSize(new java.awt.Dimension(250, 15));
+        TextFieldAncienNomStage.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldAncienNomStage.setEnabled(false);
+        TextFieldAncienNomStage.setFocusable(false);
+        TextFieldAncienNomStage.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienNomStage.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienNomStage.setOpaque(false);
+        TextFieldAncienNomStage.setPreferredSize(new java.awt.Dimension(250, 15));
 
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField2.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField2.setPreferredSize(new java.awt.Dimension(250, 15));
+        TextFieldNouveauNomStage.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNouveauNomStage.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauNomStage.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauNomStage.setPreferredSize(new java.awt.Dimension(250, 15));
 
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField3.setEnabled(false);
-        jTextField3.setFocusable(false);
-        jTextField3.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField3.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField3.setOpaque(false);
-        jTextField3.setPreferredSize(new java.awt.Dimension(250, 15));
+        TextFieldAncienneDateEvenement.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldAncienneDateEvenement.setEnabled(false);
+        TextFieldAncienneDateEvenement.setFocusable(false);
+        TextFieldAncienneDateEvenement.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienneDateEvenement.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienneDateEvenement.setOpaque(false);
+        TextFieldAncienneDateEvenement.setPreferredSize(new java.awt.Dimension(250, 15));
 
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField4.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField4.setPreferredSize(new java.awt.Dimension(250, 15));
+        TextFieldNouvelleDateEvenement.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNouvelleDateEvenement.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouvelleDateEvenement.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouvelleDateEvenement.setPreferredSize(new java.awt.Dimension(250, 15));
 
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.setEnabled(false);
-        jTextField5.setFocusable(false);
-        jTextField5.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField5.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField5.setOpaque(false);
-        jTextField5.setPreferredSize(new java.awt.Dimension(250, 15));
+        TextFieldAncienneDateInscription.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldAncienneDateInscription.setEnabled(false);
+        TextFieldAncienneDateInscription.setFocusable(false);
+        TextFieldAncienneDateInscription.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienneDateInscription.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienneDateInscription.setOpaque(false);
+        TextFieldAncienneDateInscription.setPreferredSize(new java.awt.Dimension(250, 15));
 
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField6.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField6.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField6.setPreferredSize(new java.awt.Dimension(250, 15));
+        TextFieldNouvelleDateInscription.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNouvelleDateInscription.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouvelleDateInscription.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouvelleDateInscription.setPreferredSize(new java.awt.Dimension(250, 15));
 
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setEnabled(false);
-        jTextField7.setFocusable(false);
-        jTextField7.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField7.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField7.setOpaque(false);
-        jTextField7.setPreferredSize(new java.awt.Dimension(250, 15));
+        TextFieldAncienPrixInscription.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldAncienPrixInscription.setEnabled(false);
+        TextFieldAncienPrixInscription.setFocusable(false);
+        TextFieldAncienPrixInscription.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienPrixInscription.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienPrixInscription.setOpaque(false);
+        TextFieldAncienPrixInscription.setPreferredSize(new java.awt.Dimension(250, 15));
 
-        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField8.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField8.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField8.setPreferredSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauPrixInscription.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNouveauPrixInscription.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauPrixInscription.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauPrixInscription.setPreferredSize(new java.awt.Dimension(250, 22));
 
-        jTextField9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField9.setEnabled(false);
-        jTextField9.setFocusable(false);
-        jTextField9.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField9.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField9.setOpaque(false);
-        jTextField9.setPreferredSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienLieuEvenement.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldAncienLieuEvenement.setEnabled(false);
+        TextFieldAncienLieuEvenement.setFocusable(false);
+        TextFieldAncienLieuEvenement.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienLieuEvenement.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienLieuEvenement.setOpaque(false);
+        TextFieldAncienLieuEvenement.setPreferredSize(new java.awt.Dimension(250, 22));
 
-        jTextField10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField10.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField10.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField10.setPreferredSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauLieuEvenement.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNouveauLieuEvenement.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauLieuEvenement.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauLieuEvenement.setPreferredSize(new java.awt.Dimension(250, 22));
 
-        jTextField11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField11.setEnabled(false);
-        jTextField11.setFocusable(false);
-        jTextField11.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField11.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField11.setOpaque(false);
-        jTextField11.setPreferredSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienNombreParticipants.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldAncienNombreParticipants.setEnabled(false);
+        TextFieldAncienNombreParticipants.setFocusable(false);
+        TextFieldAncienNombreParticipants.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienNombreParticipants.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienNombreParticipants.setOpaque(false);
+        TextFieldAncienNombreParticipants.setPreferredSize(new java.awt.Dimension(250, 22));
 
-        jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField12.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField12.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField12.setPreferredSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauNombreParticipants.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNouveauNombreParticipants.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauNombreParticipants.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouveauNombreParticipants.setPreferredSize(new java.awt.Dimension(250, 22));
 
-        jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField13.setEnabled(false);
-        jTextField13.setFocusable(false);
-        jTextField13.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField13.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField13.setOpaque(false);
-        jTextField13.setPreferredSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienneDureeStage.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldAncienneDureeStage.setEnabled(false);
+        TextFieldAncienneDureeStage.setFocusable(false);
+        TextFieldAncienneDureeStage.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienneDureeStage.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldAncienneDureeStage.setOpaque(false);
+        TextFieldAncienneDureeStage.setPreferredSize(new java.awt.Dimension(250, 22));
 
-        jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField14.setMaximumSize(new java.awt.Dimension(250, 22));
-        jTextField14.setMinimumSize(new java.awt.Dimension(250, 22));
-        jTextField14.setPreferredSize(new java.awt.Dimension(250, 22));
+        TextFieldNouvelleDureeStage.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNouvelleDureeStage.setMaximumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouvelleDureeStage.setMinimumSize(new java.awt.Dimension(250, 22));
+        TextFieldNouvelleDureeStage.setPreferredSize(new java.awt.Dimension(250, 22));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -211,159 +211,159 @@ public class JDUpdateStage extends javax.swing.JDialog {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
+                    .addComponent(LabelNouveauNomStage)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel9))
+                            .addComponent(LabelNouveauNombreParticipants)
+                            .addComponent(LabelAncienneDureeStage)
+                            .addComponent(LabelNouvelleDureeStage)
+                            .addComponent(LabelAncienNombreParticipants)
+                            .addComponent(LabelNouveauLieuEvenement)
+                            .addComponent(LabelAncienLieuEvenement)
+                            .addComponent(LabelNouveauPrix))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(TextFieldNouveauPrixInscription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldAncienLieuEvenement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldNouveauLieuEvenement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldAncienNombreParticipants, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldNouvelleDureeStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldAncienneDureeStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldNouveauNombreParticipants, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel2)
+                            .addComponent(LabelAncienNomStage)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(TextFieldAncienNomStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldNouveauNomStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel4)
+                                    .addComponent(LabelAncienDateEvenement)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(TextFieldAncienneDateEvenement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel5)
+                                    .addComponent(LabelNouvelleDateEvenement)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(TextFieldNouvelleDateEvenement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel6)
+                                    .addComponent(LabelAncienneDateInscription)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(TextFieldAncienneDateInscription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel7)
+                                    .addComponent(LabelNouvelleDateInscription)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(TextFieldNouvelleDateInscription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel8)
+                                    .addComponent(LabelAncienPrix)
                                     .addGap(66, 66, 66)
-                                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(63, Short.MAX_VALUE))
+                                    .addComponent(TextFieldAncienPrixInscription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(12, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2)
+                    .addComponent(LabelAncienNomStage)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
+                        .addComponent(TextFieldAncienNomStage, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3)
+                    .addComponent(LabelNouveauNomStage)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
+                        .addComponent(TextFieldNouveauNomStage, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel4)
+                    .addComponent(LabelAncienDateEvenement)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
+                        .addComponent(TextFieldAncienneDateEvenement, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel5)
+                    .addComponent(LabelNouvelleDateEvenement)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
+                        .addComponent(TextFieldNouvelleDateEvenement, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel6)
+                    .addComponent(LabelAncienneDateInscription)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
+                        .addComponent(TextFieldAncienneDateInscription, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel7)
+                    .addComponent(LabelNouvelleDateInscription)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
+                        .addComponent(TextFieldNouvelleDateInscription, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel8)
+                    .addComponent(LabelAncienPrix)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
+                        .addComponent(TextFieldAncienPrixInscription, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
+                    .addComponent(LabelNouveauPrix)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(TextFieldNouveauPrixInscription, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelAncienLieuEvenement)
+                    .addComponent(TextFieldAncienLieuEvenement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelNouveauLieuEvenement)
+                    .addComponent(TextFieldNouveauLieuEvenement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelAncienNombreParticipants)
+                    .addComponent(TextFieldAncienNombreParticipants, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelNouveauNombreParticipants)
+                    .addComponent(TextFieldNouveauNombreParticipants, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelAncienneDureeStage)
+                    .addComponent(TextFieldAncienneDureeStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelNouvelleDureeStage)
+                    .addComponent(TextFieldNouvelleDureeStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19))
         );
 
-        jTextField1.getAccessibleContext().setAccessibleParent(this);
-        jTextField2.getAccessibleContext().setAccessibleParent(this);
-        jTextField3.getAccessibleContext().setAccessibleParent(this);
-        jTextField4.getAccessibleContext().setAccessibleParent(this);
-        jTextField5.getAccessibleContext().setAccessibleParent(this);
-        jTextField6.getAccessibleContext().setAccessibleParent(this);
-        jTextField7.getAccessibleContext().setAccessibleParent(this);
-        jTextField8.getAccessibleContext().setAccessibleParent(this);
-        jTextField9.getAccessibleContext().setAccessibleParent(this);
-        jTextField10.getAccessibleContext().setAccessibleParent(this);
-        jTextField11.getAccessibleContext().setAccessibleParent(this);
-        jTextField12.getAccessibleContext().setAccessibleParent(this);
-        jTextField13.getAccessibleContext().setAccessibleParent(this);
-        jTextField14.getAccessibleContext().setAccessibleParent(this);
+        TextFieldAncienNomStage.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNouveauNomStage.getAccessibleContext().setAccessibleParent(this);
+        TextFieldAncienneDateEvenement.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNouvelleDateEvenement.getAccessibleContext().setAccessibleParent(this);
+        TextFieldAncienneDateInscription.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNouvelleDateInscription.getAccessibleContext().setAccessibleParent(this);
+        TextFieldAncienPrixInscription.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNouveauPrixInscription.getAccessibleContext().setAccessibleParent(this);
+        TextFieldAncienLieuEvenement.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNouveauLieuEvenement.getAccessibleContext().setAccessibleParent(this);
+        TextFieldAncienNombreParticipants.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNouveauNombreParticipants.getAccessibleContext().setAccessibleParent(this);
+        TextFieldAncienneDureeStage.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNouvelleDureeStage.getAccessibleContext().setAccessibleParent(this);
 
-        jButton1.setText("Confirmer");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BoutonConfirmer.setText("Confirmer");
+        BoutonConfirmer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BoutonConfirmerActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Annuler");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BoutonAnnuler.setText("Annuler");
+        BoutonAnnuler.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BoutonAnnulerActionPerformed(evt);
             }
         });
 
@@ -377,56 +377,58 @@ public class JDUpdateStage extends javax.swing.JDialog {
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(180, 180, 180)
-                .addComponent(jLabel1)
+                .addComponent(LabelModificationStage)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(BoutonConfirmer)
                 .addGap(72, 72, 72)
-                .addComponent(jButton2)
+                .addComponent(BoutonAnnuler)
                 .addGap(47, 47, 47))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(LabelModificationStage)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(BoutonConfirmer)
+                    .addComponent(BoutonAnnuler))
                 .addContainerGap(53, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BoutonAnnulerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAnnulerActionPerformed
         // TODO add your handling code here:
         
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BoutonAnnulerActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BoutonConfirmerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonConfirmerActionPerformed
         // TODO add your handling code here:
         //confirmer
         Stage sta = new Stage();
-        sta.setNom(jTextField2.getText());
-        sta.setDateEvenementBE(jTextField4.getText());
-        sta.setDateLimiteInscriptionBE(jTextField6.getText());
-        sta.setPrixInscription(Integer.parseInt(jTextField8.getText()));
-        sta.setLieu(jTextField10.getText());
-        sta.setNbreMax(Integer.parseInt(jTextField12.getText()));
-        sta.setDuree(Integer.parseInt(jTextField14.getText()));
+        
+        sta.setIdStage(tmpIdStage);
+        sta.setNom(TextFieldNouveauNomStage.getText());
+        sta.setDateEvenementBE(TextFieldNouvelleDateEvenement.getText());
+        sta.setDateLimiteInscriptionBE(TextFieldNouvelleDateInscription.getText());
+        sta.setPrixInscription(Integer.parseInt(TextFieldNouveauPrixInscription.getText()));
+        sta.setLieu(TextFieldNouveauLieuEvenement.getText());
+        sta.setNbreMax(Integer.parseInt(TextFieldNouveauNombreParticipants.getText()));
+        sta.setDuree(Integer.parseInt(TextFieldNouvelleDureeStage.getText()));
         boolean ok = daoSta.updateStage(sta);
         if (!ok)
             JOptionPane.showMessageDialog(null,"Modification impossible !","Avertissement",JOptionPane.ERROR_MESSAGE);
         
         this.dispose();
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BoutonConfirmerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -472,49 +474,51 @@ public class JDUpdateStage extends javax.swing.JDialog {
     
      private void fillComponents(Stage sta)
     {
-        jTextField1.setText(sta.getNom());
-        jTextField3.setText(sta.getDateEvenementBE());
-        jTextField5.setText(sta.getDateLimiteInscriptionBE());
-        jTextField7.setText(String.valueOf(sta.getPrixInscription()));
-        jTextField9.setText(sta.getLieu());
-        jTextField11.setText(String.valueOf(sta.getNbreMax()));
-        jTextField13.setText(String.valueOf(sta.getDuree()));
+        tmpIdStage = sta.getIdStage();
+        TextFieldAncienNomStage.setText(sta.getNom());
+        TextFieldAncienneDateEvenement.setText(sta.getDateEvenementBE());
+        TextFieldAncienneDateInscription.setText(sta.getDateLimiteInscriptionBE());
+        TextFieldAncienPrixInscription.setText(String.valueOf(sta.getPrixInscription()));
+        TextFieldAncienLieuEvenement.setText(sta.getLieu());
+        TextFieldAncienNombreParticipants.setText(String.valueOf(sta.getNbreMax()));
+        TextFieldAncienneDureeStage.setText(String.valueOf(sta.getDuree()));
         
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton BoutonAnnuler;
+    private javax.swing.JButton BoutonConfirmer;
+    private javax.swing.JLabel LabelAncienDateEvenement;
+    private javax.swing.JLabel LabelAncienLieuEvenement;
+    private javax.swing.JLabel LabelAncienNomStage;
+    private javax.swing.JLabel LabelAncienNombreParticipants;
+    private javax.swing.JLabel LabelAncienPrix;
+    private javax.swing.JLabel LabelAncienneDateInscription;
+    private javax.swing.JLabel LabelAncienneDureeStage;
+    private javax.swing.JLabel LabelModificationStage;
+    private javax.swing.JLabel LabelNouveauLieuEvenement;
+    private javax.swing.JLabel LabelNouveauNomStage;
+    private javax.swing.JLabel LabelNouveauNombreParticipants;
+    private javax.swing.JLabel LabelNouveauPrix;
+    private javax.swing.JLabel LabelNouvelleDateEvenement;
+    private javax.swing.JLabel LabelNouvelleDateInscription;
+    private javax.swing.JLabel LabelNouvelleDureeStage;
+    private javax.swing.JTextField TextFieldAncienLieuEvenement;
+    private javax.swing.JTextField TextFieldAncienNomStage;
+    private javax.swing.JTextField TextFieldAncienNombreParticipants;
+    private javax.swing.JTextField TextFieldAncienPrixInscription;
+    private javax.swing.JTextField TextFieldAncienneDateEvenement;
+    private javax.swing.JTextField TextFieldAncienneDateInscription;
+    private javax.swing.JTextField TextFieldAncienneDureeStage;
+    private javax.swing.JTextField TextFieldNouveauLieuEvenement;
+    private javax.swing.JTextField TextFieldNouveauNomStage;
+    private javax.swing.JTextField TextFieldNouveauNombreParticipants;
+    private javax.swing.JTextField TextFieldNouveauPrixInscription;
+    private javax.swing.JTextField TextFieldNouvelleDateEvenement;
+    private javax.swing.JTextField TextFieldNouvelleDateInscription;
+    private javax.swing.JTextField TextFieldNouvelleDureeStage;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 private DAOStage daoSta = Factory.getDAOStage();
+private int tmpIdStage;
 }

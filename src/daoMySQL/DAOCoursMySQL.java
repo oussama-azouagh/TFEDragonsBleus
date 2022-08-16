@@ -28,13 +28,13 @@ public class DAOCoursMySQL implements DAOCours{
     public ArrayList <Cours> selectCours ()
     {
         ArrayList <Cours> myList = new ArrayList();
-        String request = "Select * from Cours";
+        String request = "Select * from Cours, Local";
         ResultSet resu = DAOConnexionMySQL.getInstance().selectQuery (request);
         try {
             while (resu.next()) 
             {
                 myList.add (new Cours (resu.getInt("IdCours"), resu.getString("Nom"), resu.getString("HeureDebut"),
-                    resu.getString("HeureFin"), resu.getString("Jours") ,new Local(resu.getInt("IdLocal"),resu.getString("NomLocal") ) ));
+                    resu.getString("HeureFin"), resu.getString("Jour") ,new Local(resu.getInt("IdLocal"),resu.getString("Nom") ) ));
             }
         }
         catch (SQLException e)
@@ -49,13 +49,13 @@ public class DAOCoursMySQL implements DAOCours{
     public ArrayList <Cours> selectCoursParNom (String nom)
     {
         ArrayList <Cours> myList = new ArrayList();
-        String request = "Select * from Cours where Nom Like '" +nom + "' order by 1  ";
+        String request = "Select * from Cours where Nom, Local Like '" +nom + "' order by 1  ";
         ResultSet resu = DAOConnexionMySQL.getInstance().selectQuery (request);
         try {
             while (resu.next()) 
             {
                 myList.add (new Cours (resu.getInt("IdCours"), resu.getString("Nom"), resu.getString("HeureDebut"),
-                    resu.getString("HeureFin"), resu.getString("Jours") ,new Local(resu.getInt("IdLocal"),resu.getString("NomLocal") ) ));
+                    resu.getString("HeureFin"), resu.getString("Jour") ,new Local(resu.getInt("IdLocal"),resu.getString("Nom") ) ));
             }
         }
         catch (SQLException e)
@@ -70,13 +70,13 @@ public class DAOCoursMySQL implements DAOCours{
     public ArrayList <Cours> selectCoursParLocal (String nomLoc)
     {
         ArrayList <Cours> myList = new ArrayList();
-        String request = "Select * from Cours C, Local L WHERE C.IdLocal =L.IdLocal AND NomLocal Like '" +nomLoc + "' order by 1  ";
+        String request = "Select * from Cours C, Local L WHERE C.IdLocal =L.IdLocal AND Nom Like '" +nomLoc + "' order by 1  ";
         ResultSet resu = DAOConnexionMySQL.getInstance().selectQuery (request);
         try {
             while (resu.next()) 
             {
                 myList.add (new Cours (resu.getInt("IdCours"), resu.getString("Nom"), resu.getString("HeureDebut"),
-                    resu.getString("HeureFin"), resu.getString("Jours") ,new Local(resu.getInt("IdLocal"),resu.getString("NomLocal") ) ));
+                    resu.getString("HeureFin"), resu.getString("Jour") ,new Local(resu.getInt("IdLocal"),resu.getString("Nom") ) ));
             }
         }
         catch (SQLException e)

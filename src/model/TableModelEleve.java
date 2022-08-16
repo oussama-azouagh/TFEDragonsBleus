@@ -5,12 +5,16 @@ import transfertObject.*;
 
 public class TableModelEleve extends javax.swing.table.AbstractTableModel {
     
-   // private String[] columnNames = {"Ident Eleve","Nom","Prénom","Année de Naissance","Numero de tél.","Num Affilié Fédération","Assurance",
-   // "Grade","Adresse E-mail","Categorie","Adresse","Numero","Boite","Code Postal","Ville"};
-    
-    
     private String[] columnNames = {"Ident Eleve","Nom","Prénom","Année de Naissance","Numero de tél.","Num Affilié Fédération","Assurance",
-   "Grade","Adresse E-mail","Categorie","Adresse","Numero","Boite"};
+    "Grade","Adresse E-mail","Categorie","Adresse","Numero","Boite","Code Postal","Ville"};
+    
+    
+   // private String[] columnNames = {"Ident Eleve","Nom","Prénom","Année de Naissance","Numero de tél.","Num Affilié Fédération","Assurance",
+   //"Grade","Adresse E-mail","Categorie","Adresse","Numero","Boite"};
+    
+   // private String[] columnNames = {"Ident Eleve","Nom","Prénom","Année de Naissance","Numero de tél.","Num Affilié Fédération","Assurance",
+   //"Grade","Adresse E-mail","Categorie","Adresse","Numero"};
+    
     private ArrayList <Eleve> myList;
 
     public TableModelEleve(ArrayList myList)
@@ -44,10 +48,10 @@ public class TableModelEleve extends javax.swing.table.AbstractTableModel {
             case 6 :    return elv.isAssurance();
             case 7 :    return elv.getGrade();
             case 8 :    return elv.getMail();
-            case 9 :    return elv.getIdCategorie().getDescription();
-            case 10 :   return elv.getIdAdresse().getNomAdresse();
-            case 11 :   return elv.getIdAdresse().getNumero();
-            case 12 :   return elv.getIdAdresse().getBoite();
+           // case 9 :    return elv.getIdCategorie().getDescription();
+           // case 10 :   return elv.getIdAdresse().getNomAdresse();
+           // case 11 :   return elv.getIdAdresse().getNumero();
+           // case 12 :   return elv.getIdAdresse().getBoite();
            // case 13 :   return elv.getIdAdresse().getCodePostal();
            // case 14 :   return elv.getIdAdresse().getIdVille().getIdVille();
                

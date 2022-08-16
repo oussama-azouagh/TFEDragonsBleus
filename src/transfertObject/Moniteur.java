@@ -137,6 +137,11 @@ public class Moniteur {
     public void setIdAdresse(Adresse idAdresse) {
         this.idAdresse = idAdresse;
     }
+
+    @Override
+    public String toString() {
+        return "Moniteur{" + "idMoniteur=" + idMoniteur + ", nom=" + nom + ", prenom=" + prenom + ", anneeNaissance=" + anneeNaissance + ", telephone=" + telephone + ", numAffilieFederation=" + numAffilieFederation + ", assurance=" + assurance + ", grade=" + grade + ", mail=" + mail + ", idAdresse=" + idAdresse + '}';
+    }
     
     
 }

@@ -12,6 +12,7 @@ public class TableModelMoniteur extends javax.swing.table.AbstractTableModel {
     public TableModelMoniteur(ArrayList myList)
     {
         this.myList = myList;
+        //this.fireTableDataChanged();
     }
     public int getColumnCount() {
         return columnNames.length;
@@ -29,7 +30,7 @@ public class TableModelMoniteur extends javax.swing.table.AbstractTableModel {
     public Object getValueAt(int row, int col) {
         
        Moniteur moni = myList.get(row);
-       
+      
         switch (col)
         {
             case 0 :    return moni.getIdMoniteur();
@@ -43,15 +44,15 @@ public class TableModelMoniteur extends javax.swing.table.AbstractTableModel {
             case 8 :    return moni.getMail();
             case 9 :    return moni.getIdAdresse().getIdAdresse();
             //case 10 :   return moni.getIdAdresse().getNumero();
-            //case 11 :   return moni.getIdAdresse().getBoite();
-            //case 12 :   return moni.getIdAdresse().getCodePostal();
-            //case 13 :   return moni.getIdAdresse().getIdVille().getNom();
+           // case 11 :   return moni.getIdAdresse().getBoite();
+           // case 12 :   return moni.getIdAdresse().getCodePostal();
+           // case 13 :   return moni.getIdAdresse().getIdVille().getNom();
             default :   return null;
         }
     }
 
     @Override
-    public Class getColumnClass(int c) {
+    public Class getColumnClass(int c) { 
         return getValueAt(0, c).getClass();
     }
     

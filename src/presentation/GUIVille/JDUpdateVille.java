@@ -40,38 +40,41 @@ public class JDUpdateVille extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        BoutonConfirmation = new javax.swing.JButton();
+        BoutonAnnuler = new javax.swing.JButton();
+        LabelAncienNomVille = new javax.swing.JLabel();
+        TextFieldAncienNomVille = new javax.swing.JTextField();
+        LabelNouveauNomVille = new javax.swing.JLabel();
+        TextFieldNouveauNomVille = new javax.swing.JTextField();
+        LabelModificationVille = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jButton1.setText("Confirmer");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BoutonConfirmation.setText("Confirmer");
+        BoutonConfirmation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BoutonConfirmationActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Annuller");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BoutonAnnuler.setText("Annuller");
+        BoutonAnnuler.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BoutonAnnulerActionPerformed(evt);
             }
         });
 
-        jLabel1.setText("Ancien Nom Ville");
+        LabelAncienNomVille.setText("Ancien Nom Ville");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        TextFieldAncienNomVille.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                TextFieldAncienNomVilleActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Nouveau Nom Ville");
+        LabelNouveauNomVille.setText("Nouveau Nom Ville");
+
+        LabelModificationVille.setText("Modification Nom Ville");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -81,58 +84,63 @@ public class JDUpdateVille extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(115, 115, 115)
-                        .addComponent(jButton1)
+                        .addComponent(BoutonConfirmation)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2))
+                        .addComponent(BoutonAnnuler))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(LabelNouveauNomVille, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField2))
+                                .addComponent(TextFieldNouveauNomVille, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(LabelAncienNomVille, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(TextFieldAncienNomVille, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(LabelModificationVille, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(108, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
+                .addContainerGap()
+                .addComponent(LabelModificationVille)
+                .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
+                    .addComponent(LabelAncienNomVille, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TextFieldAncienNomVille, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(LabelNouveauNomVille)
+                    .addComponent(TextFieldNouveauNomVille, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(76, 76, 76)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BoutonConfirmation)
+                    .addComponent(BoutonAnnuler))
                 .addGap(48, 48, 48))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void TextFieldAncienNomVilleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldAncienNomVilleActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_TextFieldAncienNomVilleActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BoutonAnnulerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAnnulerActionPerformed
         // TODO add your handling code here: Annuler
         
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BoutonAnnulerActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BoutonConfirmationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonConfirmationActionPerformed
         // TODO add your handling code here:Confirmer
         Ville ville =new Ville ();
-        ville.setNom(jTextField2.getText());
-    }//GEN-LAST:event_jButton1ActionPerformed
+        ville.setIdVille(tmpIdVille);
+        ville.setNom(TextFieldNouveauNomVille.getText());
+    }//GEN-LAST:event_BoutonConfirmationActionPerformed
 
     /**
      * @param args the command line arguments
@@ -178,17 +186,19 @@ public class JDUpdateVille extends javax.swing.JDialog {
 
     private void fillComponents(Ville ville)
     {
-        jTextField1.setText(ville.getNom());
-       
+        TextFieldAncienNomVille.setText(ville.getNom());
+       tmpIdVille = ville.getIdVille();
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton BoutonAnnuler;
+    private javax.swing.JButton BoutonConfirmation;
+    private javax.swing.JLabel LabelAncienNomVille;
+    private javax.swing.JLabel LabelModificationVille;
+    private javax.swing.JLabel LabelNouveauNomVille;
+    private javax.swing.JTextField TextFieldAncienNomVille;
+    private javax.swing.JTextField TextFieldNouveauNomVille;
     // End of variables declaration//GEN-END:variables
 private DAOVille daoVille = Factory.getDAOVille();
+private int tmpIdVille;
 }

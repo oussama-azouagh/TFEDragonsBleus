@@ -28,7 +28,7 @@ public class JDAddStage extends javax.swing.JDialog {
     public JDAddStage(java.awt.Frame parent, String titre) {
         super(parent, titre, true);
         initComponents();
-        getRootPane().setDefaultButton(jButton1);
+        getRootPane().setDefaultButton(BoutonConfirmer);
         setLocation(parent.getX()+parent.getWidth()/3, parent.getY()+parent.getHeight()/3);
         setVisible(true);
         initComponents();
@@ -43,100 +43,100 @@ public class JDAddStage extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        LabelAjoutStage = new javax.swing.JLabel();
+        BoutonConfirmer = new javax.swing.JButton();
+        BoutonAnnuler = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        LabelNomStage = new javax.swing.JLabel();
+        TextFieldNomStage = new javax.swing.JTextField();
+        LabelDateEvenement = new javax.swing.JLabel();
+        TextFieldDateEvenement = new javax.swing.JTextField();
+        TextFieldDateLimiteInscription = new javax.swing.JTextField();
+        LabelDateLimiteInscription = new javax.swing.JLabel();
+        LabelPrixInscription = new javax.swing.JLabel();
+        TextFieldPrixInscription = new javax.swing.JTextField();
+        LabelLieuStage = new javax.swing.JLabel();
+        TextFieldLieuStage = new javax.swing.JTextField();
+        LabelNombreMaxParticipants = new javax.swing.JLabel();
+        TextFieldNombreMaxParticipant = new javax.swing.JTextField();
+        LabelDureeStage = new javax.swing.JLabel();
+        TextFieldDureeStage = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Ajout Stage");
-        jLabel1.setToolTipText("");
+        LabelAjoutStage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelAjoutStage.setText("Ajout Stage");
+        LabelAjoutStage.setToolTipText("");
 
-        jButton1.setText("Confirmer");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BoutonConfirmer.setText("Confirmer");
+        BoutonConfirmer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BoutonConfirmerActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Annuler");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BoutonAnnuler.setText("Annuler");
+        BoutonAnnuler.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BoutonAnnulerActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Nom du Stage:");
+        LabelNomStage.setText("Nom du Stage:");
 
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField1.setMaximumSize(new java.awt.Dimension(150, 22));
-        jTextField1.setMinimumSize(new java.awt.Dimension(150, 22));
-        jTextField1.setPreferredSize(new java.awt.Dimension(150, 22));
+        TextFieldNomStage.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNomStage.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TextFieldNomStage.setMaximumSize(new java.awt.Dimension(150, 22));
+        TextFieldNomStage.setMinimumSize(new java.awt.Dimension(150, 22));
+        TextFieldNomStage.setPreferredSize(new java.awt.Dimension(150, 22));
 
-        jLabel3.setText("Date de l'événement:");
+        LabelDateEvenement.setText("Date de l'événement:");
 
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField2.setMaximumSize(new java.awt.Dimension(150, 22));
-        jTextField2.setMinimumSize(new java.awt.Dimension(150, 22));
-        jTextField2.setPreferredSize(new java.awt.Dimension(150, 22));
+        TextFieldDateEvenement.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldDateEvenement.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TextFieldDateEvenement.setMaximumSize(new java.awt.Dimension(150, 22));
+        TextFieldDateEvenement.setMinimumSize(new java.awt.Dimension(150, 22));
+        TextFieldDateEvenement.setPreferredSize(new java.awt.Dimension(150, 22));
 
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField3.setMaximumSize(new java.awt.Dimension(150, 22));
-        jTextField3.setMinimumSize(new java.awt.Dimension(150, 22));
-        jTextField3.setPreferredSize(new java.awt.Dimension(150, 22));
+        TextFieldDateLimiteInscription.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldDateLimiteInscription.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TextFieldDateLimiteInscription.setMaximumSize(new java.awt.Dimension(150, 22));
+        TextFieldDateLimiteInscription.setMinimumSize(new java.awt.Dimension(150, 22));
+        TextFieldDateLimiteInscription.setPreferredSize(new java.awt.Dimension(150, 22));
 
-        jLabel4.setText("Date limite pour l'inscription:");
+        LabelDateLimiteInscription.setText("Date limite pour l'inscription:");
 
-        jLabel5.setText("Prix de l'inscription:");
+        LabelPrixInscription.setText("Prix de l'inscription:");
 
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField4.setMaximumSize(new java.awt.Dimension(150, 22));
-        jTextField4.setMinimumSize(new java.awt.Dimension(150, 22));
-        jTextField4.setPreferredSize(new java.awt.Dimension(150, 22));
+        TextFieldPrixInscription.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldPrixInscription.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TextFieldPrixInscription.setMaximumSize(new java.awt.Dimension(150, 22));
+        TextFieldPrixInscription.setMinimumSize(new java.awt.Dimension(150, 22));
+        TextFieldPrixInscription.setPreferredSize(new java.awt.Dimension(150, 22));
 
-        jLabel6.setText("Lieu du Stage:");
+        LabelLieuStage.setText("Lieu du Stage:");
 
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField5.setMaximumSize(new java.awt.Dimension(150, 22));
-        jTextField5.setMinimumSize(new java.awt.Dimension(150, 22));
-        jTextField5.setPreferredSize(new java.awt.Dimension(150, 22));
+        TextFieldLieuStage.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldLieuStage.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TextFieldLieuStage.setMaximumSize(new java.awt.Dimension(150, 22));
+        TextFieldLieuStage.setMinimumSize(new java.awt.Dimension(150, 22));
+        TextFieldLieuStage.setPreferredSize(new java.awt.Dimension(150, 22));
 
-        jLabel7.setText("Nombre de participant maximum:");
+        LabelNombreMaxParticipants.setText("Nombre de participant maximum:");
 
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField6.setMaximumSize(new java.awt.Dimension(150, 22));
-        jTextField6.setMinimumSize(new java.awt.Dimension(150, 22));
-        jTextField6.setPreferredSize(new java.awt.Dimension(150, 22));
+        TextFieldNombreMaxParticipant.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldNombreMaxParticipant.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TextFieldNombreMaxParticipant.setMaximumSize(new java.awt.Dimension(150, 22));
+        TextFieldNombreMaxParticipant.setMinimumSize(new java.awt.Dimension(150, 22));
+        TextFieldNombreMaxParticipant.setPreferredSize(new java.awt.Dimension(150, 22));
 
-        jLabel8.setText("Durée du stage:");
+        LabelDureeStage.setText("Durée du stage:");
 
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField7.setMaximumSize(new java.awt.Dimension(150, 22));
-        jTextField7.setMinimumSize(new java.awt.Dimension(150, 22));
-        jTextField7.setPreferredSize(new java.awt.Dimension(150, 22));
+        TextFieldDureeStage.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TextFieldDureeStage.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        TextFieldDureeStage.setMaximumSize(new java.awt.Dimension(150, 22));
+        TextFieldDureeStage.setMinimumSize(new java.awt.Dimension(150, 22));
+        TextFieldDureeStage.setPreferredSize(new java.awt.Dimension(150, 22));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -146,34 +146,31 @@ public class JDAddStage extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LabelDureeStage, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(TextFieldDureeStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
+                        .addComponent(LabelNombreMaxParticipants)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(TextFieldNombreMaxParticipant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LabelLieuStage, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(TextFieldLieuStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LabelPrixInscription, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(TextFieldPrixInscription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(LabelDateLimiteInscription)
+                            .addComponent(LabelDateEvenement, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LabelNomStage, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(TextFieldDateLimiteInscription, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldDateEvenement, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextFieldNomStage, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(347, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -181,46 +178,46 @@ public class JDAddStage extends javax.swing.JDialog {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelNomStage)
+                    .addComponent(TextFieldNomStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelDateEvenement)
+                    .addComponent(TextFieldDateEvenement, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(TextFieldDateLimiteInscription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelDateLimiteInscription))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TextFieldPrixInscription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelPrixInscription, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(TextFieldLieuStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel6)
+                        .addComponent(LabelLieuStage)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelNombreMaxParticipants)
+                    .addComponent(TextFieldNombreMaxParticipant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LabelDureeStage)
+                    .addComponent(TextFieldDureeStage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jTextField1.getAccessibleContext().setAccessibleParent(this);
-        jTextField2.getAccessibleContext().setAccessibleParent(this);
-        jTextField3.getAccessibleContext().setAccessibleParent(this);
-        jTextField4.getAccessibleContext().setAccessibleParent(this);
-        jTextField5.getAccessibleContext().setAccessibleParent(this);
-        jTextField6.getAccessibleContext().setAccessibleParent(this);
-        jTextField7.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNomStage.getAccessibleContext().setAccessibleParent(this);
+        TextFieldDateEvenement.getAccessibleContext().setAccessibleParent(this);
+        TextFieldDateLimiteInscription.getAccessibleContext().setAccessibleParent(this);
+        TextFieldPrixInscription.getAccessibleContext().setAccessibleParent(this);
+        TextFieldLieuStage.getAccessibleContext().setAccessibleParent(this);
+        TextFieldNombreMaxParticipant.getAccessibleContext().setAccessibleParent(this);
+        TextFieldDureeStage.getAccessibleContext().setAccessibleParent(this);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -232,12 +229,12 @@ public class JDAddStage extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(156, 156, 156)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(LabelAjoutStage, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(77, 77, 77)
-                                .addComponent(jButton1)
+                                .addComponent(BoutonConfirmer)
                                 .addGap(68, 68, 68)
-                                .addComponent(jButton2)))
+                                .addComponent(BoutonAnnuler)))
                         .addGap(0, 385, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -248,48 +245,49 @@ public class JDAddStage extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(LabelAjoutStage)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(BoutonConfirmer)
+                    .addComponent(BoutonAnnuler))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BoutonConfirmerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonConfirmerActionPerformed
         // TODO add your handling code here:
       
         
          Stage sta = new Stage();
-         sta.setNom(jTextField1.getText());
-         sta.setDateEvenementBE(jTextField2.getText());
-         sta.setDateLimiteInscriptionBE(jTextField3.getText());
-         sta.setPrixInscription(Integer.parseInt(jTextField4.getText()));
-         sta.setLieu(jTextField5.getText());
-         sta.setNbreMax(Integer.parseInt(jTextField6.getText()));
-         sta.setDuree(Integer.parseInt(jTextField7.getText()));
+         sta.setNom(TextFieldNomStage.getText());
+         sta.setDateEvenementBE(TextFieldDateEvenement.getText());
+         sta.setDateLimiteInscriptionBE(TextFieldDateLimiteInscription.getText());
+         sta.setPrixInscription(Integer.parseInt(TextFieldPrixInscription.getText()));
+         sta.setLieu(TextFieldLieuStage.getText());
+         sta.setNbreMax(Integer.parseInt(TextFieldNombreMaxParticipant.getText()));
+         sta.setDuree(Integer.parseInt(TextFieldDureeStage.getText()));
          
          boolean ok = daoStage.insertStage(sta);
         
          if (!ok)
            JOptionPane.showMessageDialog(null,"Insertion impossible !","Avertissement",JOptionPane.ERROR_MESSAGE);
         
+         daoStage.selectStage();
         this.dispose();
         
         //refresh after adding object
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BoutonConfirmerActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BoutonAnnulerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAnnulerActionPerformed
         // TODO add your handling code here:
         
         //annuler 
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BoutonAnnulerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -334,24 +332,24 @@ public class JDAddStage extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JButton BoutonAnnuler;
+    private javax.swing.JButton BoutonConfirmer;
+    private javax.swing.JLabel LabelAjoutStage;
+    private javax.swing.JLabel LabelDateEvenement;
+    private javax.swing.JLabel LabelDateLimiteInscription;
+    private javax.swing.JLabel LabelDureeStage;
+    private javax.swing.JLabel LabelLieuStage;
+    private javax.swing.JLabel LabelNomStage;
+    private javax.swing.JLabel LabelNombreMaxParticipants;
+    private javax.swing.JLabel LabelPrixInscription;
+    private javax.swing.JTextField TextFieldDateEvenement;
+    private javax.swing.JTextField TextFieldDateLimiteInscription;
+    private javax.swing.JTextField TextFieldDureeStage;
+    private javax.swing.JTextField TextFieldLieuStage;
+    private javax.swing.JTextField TextFieldNomStage;
+    private javax.swing.JTextField TextFieldNombreMaxParticipant;
+    private javax.swing.JTextField TextFieldPrixInscription;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
     private DAOStage daoStage = Factory.getDAOStage();
     

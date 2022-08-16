@@ -32,7 +32,7 @@ public class DAOCompetitionMySQL implements DAOCompetition{
     {
         ArrayList <Competition> myList = new ArrayList();
                 
-        String request = "Select IdCompetition, Nom, DateEvenement, DateLimiteInscription, IdTypeCompetition, NomType, PrixInscription, Lieu, Durée  From C.Competition, T.TypeCompetition Where C.idTypeCompetition = T.idTypeCompetition ";
+        String request = "Select IdCompetition, Nom, DateEvenement, DateLimiteInscription, C.IdTypeCompetition, NomType, PrixInscription, Lieu, Duree  From Competition C, TypeCompetition T Where C.idTypeCompetition = T.idTypeCompetition ";
         
         ResultSet resu = DAOConnexionMySQL.getInstance().selectQuery (request);
         try {
@@ -188,13 +188,16 @@ public class DAOCompetitionMySQL implements DAOCompetition{
      cela s'est bien passé, false sinon */
     public boolean insertCompetition (Competition comp)
     {
-      
+        System.out.println(comp.toString());
+        System.out.println(comp.getDateEvenementSQL());
+        System.out.println(comp.getDateEvenement());
+        
         // Attention date en type SQL !!!
         boolean ok = DAOConnexionMySQL.getInstance().actionQuery("Insert into Competition (IdCompetition, Nom, DateEvenement, " +
-        "DateLimiteInscription, TypeCompetition, PrixInscription, Lieu, Duree) values ('" + comp.getIdCompetition() + "','" 
-        + comp.getNom() + "'," + comp.getDateEvenementSQL() + "," + comp.getDateLimiteInscriptionSQL()+ ",'" + comp.getidTypeCompetition().getIdTypeCompetition() + "'," 
-        + comp.getidTypeCompetition().getNomType() + "," + comp.getPrixInscription() + ",'" + comp.getLieu() +
-         "," + comp.getDuree()+ ")");
+        "DateLimiteInscription, idTypeCompetition, PrixInscription, Lieu, Duree) values ('" + comp.getIdCompetition() + "','" 
+        + comp.getNom() + "'," + comp.getDateEvenementSQL() + "," + comp.getDateLimiteInscriptionSQL()+ ",'" + comp.getidTypeCompetition().getIdTypeCompetition() + 
+        "','" + comp.getPrixInscription() + "','" + comp.getLieu() +
+         "','" + comp.getDuree()+ "')");
         
         return ok;
     }
@@ -217,8 +220,8 @@ public class DAOCompetitionMySQL implements DAOCompetition{
     public boolean updateCompetition (Competition comp)
     {
         String request = "Update Competition set Nom = '" + comp.getNom() +
-        "', DateEvenement = '" + comp.getDateEvenementSQL() + "', DateLimiteInscription = '" + comp.getDateLimiteInscriptionSQL() +
-        "', TypeCompetition = '" + comp.getidTypeCompetition().getIdTypeCompetition() + "', PrixInscription = '" + comp.getPrixInscription() + 
+        "', DateEvenement = " + comp.getDateEvenementSQL() + ", DateLimiteInscription = " + comp.getDateLimiteInscriptionSQL() +
+        ", idTypeCompetition = '" + comp.getidTypeCompetition().getIdTypeCompetition() + "', PrixInscription = '" + comp.getPrixInscription() + 
         "',Lieu = '" + comp.getLieu() + "', Duree = '" + comp.getDuree() + "' where IdCompetition = '" + comp.getIdCompetition() + "' ";
         
         boolean ok = DAOConnexionMySQL.getInstance().actionQuery(request);

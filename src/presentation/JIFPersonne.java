@@ -5,6 +5,7 @@
  */
 package presentation;
 
+import presentation.GUIMoniteur.JIFMoniteur;
 import java.beans.PropertyVetoException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

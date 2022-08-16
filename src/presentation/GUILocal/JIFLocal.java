@@ -43,13 +43,13 @@ public class JIFLocal extends javax.swing.JInternalFrame {
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jFrame1 = new javax.swing.JFrame();
         jFrame2 = new javax.swing.JFrame();
-        jButton4 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        BoutonMenu = new javax.swing.JButton();
+        ScrollPaneLocal = new javax.swing.JScrollPane();
+        ListLocal = new javax.swing.JList<>();
+        BoutonAjout = new javax.swing.JButton();
+        BoutonSuppression = new javax.swing.JButton();
+        BoutonModification = new javax.swing.JButton();
+        LabelLocal = new javax.swing.JLabel();
 
         jInternalFrame1.setVisible(true);
 
@@ -91,47 +91,47 @@ public class JIFLocal extends javax.swing.JInternalFrame {
         setPreferredSize(new java.awt.Dimension(700, 500));
         setVisible(true);
 
-        jButton4.setText("Menu");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        BoutonMenu.setText("Menu");
+        BoutonMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                BoutonMenuActionPerformed(evt);
             }
         });
 
-        jList1.setModel(myModel);
-        jList1.setMinimumSize(new java.awt.Dimension(1000, 900));
-        jScrollPane2.setViewportView(jList1);
+        ListLocal.setModel(myModel);
+        ListLocal.setMinimumSize(new java.awt.Dimension(1000, 900));
+        ScrollPaneLocal.setViewportView(ListLocal);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 255, 0));
-        jButton1.setText("+");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BoutonAjout.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonAjout.setForeground(new java.awt.Color(0, 255, 0));
+        BoutonAjout.setText("+");
+        BoutonAjout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BoutonAjoutActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 0, 0));
-        jButton2.setText("-");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BoutonSuppression.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonSuppression.setForeground(new java.awt.Color(255, 0, 0));
+        BoutonSuppression.setText("-");
+        BoutonSuppression.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BoutonSuppressionActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 102, 0));
-        jButton3.setText("Modifier");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        BoutonModification.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonModification.setForeground(new java.awt.Color(255, 102, 0));
+        BoutonModification.setText("Modifier");
+        BoutonModification.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                BoutonModificationActionPerformed(evt);
             }
         });
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Locaux");
-        jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        LabelLocal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelLocal.setText("Locaux");
+        LabelLocal.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -139,72 +139,72 @@ public class JIFLocal extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(320, 320, 320)
-                .addComponent(jLabel1)
+                .addComponent(LabelLocal)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ScrollPaneLocal, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BoutonMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(BoutonAjout)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2)
+                        .addComponent(BoutonSuppression)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)))
+                        .addComponent(BoutonModification)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(52, 52, 52)
-                .addComponent(jLabel1)
+                .addComponent(LabelLocal)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ScrollPaneLocal, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3)
+                    .addComponent(BoutonModification)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton1)
-                        .addComponent(jButton2)
-                        .addComponent(jButton4)))
+                        .addComponent(BoutonAjout)
+                        .addComponent(BoutonSuppression)
+                        .addComponent(BoutonMenu)))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void BoutonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonMenuActionPerformed
         // Menu
          this.dispose();
         //jDesktopPane1.removeAll(); sert ?
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_BoutonMenuActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BoutonAjoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAjoutActionPerformed
         // TODO add your handling code here:
          JFrame parent = (JFrame)(this.getDesktopPane().getTopLevelAncestor());
         new JDAddLocal(parent, "INSERTION D'UN NOUVEAU LOCAL");
         
         // après l'insertion : rafraîchir les données en relisant la BD
         refreshModel();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BoutonAjoutActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BoutonSuppressionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSuppressionActionPerformed
         // TODO add your handling code here:
        Local locSupp;
         //supp 1correct 2iem non check out ouf bound
-        if (jList1.getSelectedIndex() == -1 )
+        if (ListLocal.getSelectedIndex() == -1 )
             JOptionPane.showMessageDialog(this,"Sélectionnez d'abord un local svp !","Avertissement",JOptionPane.ERROR_MESSAGE);
         else
         {
             int rep = JOptionPane.showConfirmDialog(this,"Voulez-vous vraiment supprimer " +
-            (String)jList1.getSelectedValue() + " ?", "Confirmation", JOptionPane.YES_NO_OPTION);
+            (String)ListLocal.getSelectedValue() + " ?", "Confirmation", JOptionPane.YES_NO_OPTION);
             if (rep == JOptionPane.YES_OPTION)
             {
-                locSupp = myModel.getMyList(jList1.getSelectedIndex());
+                locSupp = myModel.getMyList(ListLocal.getSelectedIndex());
                 boolean ok = daoLoc.deleteLocal(locSupp.getIdLocal());
                 if (!ok)
                     JOptionPane.showMessageDialog(this,"Suppression impossible !","Avertissement",JOptionPane.ERROR_MESSAGE);
@@ -212,21 +212,21 @@ public class JIFLocal extends javax.swing.JInternalFrame {
             // après : rafraîchir la liste
             refreshModel();
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BoutonSuppressionActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void BoutonModificationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonModificationActionPerformed
         // TODO add your handling code here:
          Local locModif;
         
-        if (jList1.getSelectedIndex() == -1)
+        if (ListLocal.getSelectedIndex() == -1)
             JOptionPane.showMessageDialog(this,"Sélectionnez d'abord un Local svp !","Avertissement",JOptionPane.ERROR_MESSAGE);
         else
         {
-            String nouvNomLoc = JOptionPane.showInputDialog(this,"Entrez le nouveau nom du local",(String)jList1.getSelectedValue());
+            String nouvNomLoc = JOptionPane.showInputDialog(this,"Entrez le nouveau nom du local",(String)ListLocal.getSelectedValue());
             if (nouvNomLoc != null)
             {
                 nouvNomLoc = nouvNomLoc.substring(0, 1).toUpperCase() + nouvNomLoc.substring(1);//1ère lettre en majuscule
-                locModif = myModel.getMyList(jList1.getSelectedIndex());
+                locModif = myModel.getMyList(ListLocal.getSelectedIndex());
                 locModif.setNomLocal(nouvNomLoc);
                 boolean ok = daoLoc.updateLocal(locModif);
                 if (!ok)
@@ -237,7 +237,7 @@ public class JIFLocal extends javax.swing.JInternalFrame {
             // après : rafraîchir la liste
             refreshModel();
         } 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_BoutonModificationActionPerformed
 
     private void refreshModel(){
     myModel.setMyList(daoLoc.selectLocal());
@@ -246,15 +246,15 @@ public class JIFLocal extends javax.swing.JInternalFrame {
 private DAOLocal daoLoc = Factory.getDAOLocal();
 private ListModelLocal myModel = new ListModelLocal(daoLoc.selectLocal());
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton BoutonAjout;
+    private javax.swing.JButton BoutonMenu;
+    private javax.swing.JButton BoutonModification;
+    private javax.swing.JButton BoutonSuppression;
+    private javax.swing.JLabel LabelLocal;
+    private javax.swing.JList<String> ListLocal;
+    private javax.swing.JScrollPane ScrollPaneLocal;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JFrame jFrame2;
     private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
 }

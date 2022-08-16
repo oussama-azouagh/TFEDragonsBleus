@@ -61,7 +61,7 @@ public class DAOCategorieMySQL implements DAOCategorie{
     {
         String request = "Update Categorie set Description = '" + cat.getDescription() +
         "', TarifCotisation = '" + cat.getTarifCotisation() +  
-        "' where IdCategorie = '" + cat.getIdCategorie() + "' ";
+        "' where IdCategorie = '" + cat.getIdCategorie() + "'";
         
         boolean ok = DAOConnexionMySQL.getInstance().actionQuery(request);
         
@@ -75,7 +75,7 @@ public class DAOCategorieMySQL implements DAOCategorie{
         
         boolean ok = DAOConnexionMySQL.getInstance().actionQuery("Insert into Categorie ( IdCategorie, Description, TarifCotisation ) " +
         "values ('" + cat.getIdCategorie() + "','" + cat.getDescription() +  "','" + cat.getTarifCotisation()+
-                ")");
+                "')");
         
         return ok;
     }

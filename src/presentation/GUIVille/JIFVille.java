@@ -38,49 +38,52 @@ public class JIFVille extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        ScrollPaneVille = new javax.swing.JScrollPane();
+        ListVille = new javax.swing.JList<>();
+        BoutonMenu = new javax.swing.JButton();
+        BoutonAjouter = new javax.swing.JButton();
+        BoutonSuppression = new javax.swing.JButton();
+        BoutonModification = new javax.swing.JButton();
 
         setTitle("Ville");
+        setMaximumSize(new java.awt.Dimension(0, 0));
+        setMinimumSize(new java.awt.Dimension(0, 0));
+        setPreferredSize(new java.awt.Dimension(0, 0));
 
-        jList1.setModel(myModel);
-        jScrollPane1.setViewportView(jList1);
+        ListVille.setModel(myModel);
+        ScrollPaneVille.setViewportView(ListVille);
 
-        jButton1.setText("Menu");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BoutonMenu.setText("Menu");
+        BoutonMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BoutonMenuActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 255, 0));
-        jButton2.setText("+");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BoutonAjouter.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonAjouter.setForeground(new java.awt.Color(0, 255, 0));
+        BoutonAjouter.setText("+");
+        BoutonAjouter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BoutonAjouterActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 0, 0));
-        jButton3.setText("-");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        BoutonSuppression.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonSuppression.setForeground(new java.awt.Color(255, 0, 0));
+        BoutonSuppression.setText("-");
+        BoutonSuppression.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                BoutonSuppressionActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 102, 0));
-        jButton4.setText("modifier");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        BoutonModification.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BoutonModification.setForeground(new java.awt.Color(255, 102, 0));
+        BoutonModification.setText("modifier");
+        BoutonModification.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                BoutonModificationActionPerformed(evt);
             }
         });
 
@@ -89,45 +92,41 @@ public class JIFVille extends javax.swing.JInternalFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ScrollPaneVille, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
+                        .addComponent(BoutonMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(57, 57, 57)
+                        .addComponent(BoutonAjouter)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(BoutonSuppression)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(BoutonModification)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3)
-                            .addComponent(jButton4))
-                        .addGap(0, 3, Short.MAX_VALUE))))
+                .addContainerGap()
+                .addComponent(ScrollPaneVille, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BoutonMenu)
+                    .addComponent(BoutonAjouter)
+                    .addComponent(BoutonSuppression)
+                    .addComponent(BoutonModification)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BoutonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonMenuActionPerformed
         // bouton menu
         
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BoutonMenuActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BoutonAjouterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonAjouterActionPerformed
         // TODO add your handling code here: Add Ville  
         JFrame parent = (JFrame)(this.getDesktopPane().getTopLevelAncestor());
         new JDAddVille(parent,"INSERTION D'UNE NOUVELLE Ville");
@@ -136,21 +135,21 @@ public class JIFVille extends javax.swing.JInternalFrame {
         // après l'insertion : rafraîchir les données en relisant la BD
         refreshModel(
         );
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BoutonAjouterActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void BoutonSuppressionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonSuppressionActionPerformed
         // TODO add your handling code here: Supprimer
          Ville villeSupp;
         //supp 1correct 2iem non check out ouf bound
-        if (jList1.getSelectedIndex() == -1 )
+        if (ListVille.getSelectedIndex() == -1 )
             JOptionPane.showMessageDialog(this,"Sélectionnez d'abord une ville svp !","Avertissement",JOptionPane.ERROR_MESSAGE);
         else
         {
             int rep = JOptionPane.showConfirmDialog(this,"Voulez-vous vraiment supprimer " +
-            (String)jList1.getSelectedValue() + " ?", "Confirmation", JOptionPane.YES_NO_OPTION);
+            (String)ListVille.getSelectedValue() + " ?", "Confirmation", JOptionPane.YES_NO_OPTION);
             if (rep == JOptionPane.YES_OPTION)
             {
-                villeSupp = myModel.getMyList(jList1.getSelectedIndex());
+                villeSupp = myModel.getMyList(ListVille.getSelectedIndex());
                 boolean ok = daoVille.deleteVille(villeSupp.getIdVille());
                 if (!ok)
                     JOptionPane.showMessageDialog(this,"Suppression impossible !","Avertissement",JOptionPane.ERROR_MESSAGE);
@@ -159,21 +158,21 @@ public class JIFVille extends javax.swing.JInternalFrame {
             refreshModel();
         }
         
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_BoutonSuppressionActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void BoutonModificationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonModificationActionPerformed
         // TODO add your handling code here: Modifier
          Ville villeModif;
         
-        if (jList1.getSelectedIndex() == -1)
+        if (ListVille.getSelectedIndex() == -1)
             JOptionPane.showMessageDialog(this,"Sélectionnez d'abord un Local svp !","Avertissement",JOptionPane.ERROR_MESSAGE);
         else
         {
-            String nouvNomVille = JOptionPane.showInputDialog(this,"Entrez le nouveau nom du local",(String)jList1.getSelectedValue());
+            String nouvNomVille = JOptionPane.showInputDialog(this,"Entrez le nouveau nom du local",(String)ListVille.getSelectedValue());
             if (nouvNomVille != null)
             {
                 nouvNomVille = nouvNomVille.substring(0, 1).toUpperCase() + nouvNomVille.substring(1);//1ère lettre en majuscule
-                villeModif = myModel.getMyList(jList1.getSelectedIndex());
+                villeModif = myModel.getMyList(ListVille.getSelectedIndex());
                 villeModif.setNom(nouvNomVille);
                 boolean ok = daoVille.updateVille(villeModif);
                 if (!ok)
@@ -184,17 +183,17 @@ public class JIFVille extends javax.swing.JInternalFrame {
             // après : rafraîchir la liste
             refreshModel();
         } 
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_BoutonModificationActionPerformed
 
 private DAOVille daoVille = Factory.getDAOVille();
     private ListModelVille myModel = new ListModelVille(daoVille.selectVille());
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton BoutonAjouter;
+    private javax.swing.JButton BoutonMenu;
+    private javax.swing.JButton BoutonModification;
+    private javax.swing.JButton BoutonSuppression;
+    private javax.swing.JList<String> ListVille;
+    private javax.swing.JScrollPane ScrollPaneVille;
     // End of variables declaration//GEN-END:variables
 
     private void refreshModel() {

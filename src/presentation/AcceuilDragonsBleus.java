@@ -5,10 +5,15 @@
  */
 package presentation;
 
+import presentation.GUICompetition.JIFCompetition;
+import presentation.GUIMoniteur.JIFMoniteur;
+import presentation.GUIEleve.JIFEleve;
+import presentation.GUICategorie.JIFCategorie;
 import presentation.GUIPassageDeGrade.JIFPassageDeGrade;
 import presentation.GUIStage.JIFStage;
 import presentation.GUIVille.JIFVille;
 import presentation.GUILocal.JIFLocal;
+import presentation.GUICours.JIFCours;
 import factory.Factory;
 import java.beans.PropertyVetoException;
 import java.util.logging.Level;
@@ -41,13 +46,15 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jDesktopPane1 = new javax.swing.JDesktopPane();
+        BoutonLocal = new javax.swing.JButton();
+        BoutonCompetition = new javax.swing.JButton();
+        BoutonVille = new javax.swing.JButton();
+        BoutonStage = new javax.swing.JButton();
+        BoutonPassageDeGrade = new javax.swing.JButton();
+        BoutonMoniteur = new javax.swing.JButton();
+        BoutonEleve = new javax.swing.JButton();
+        BoutonCategorie = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -66,67 +73,83 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
 
         jDesktopPane1.setPreferredSize(new java.awt.Dimension(1000, 700));
 
-        jButton1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jButton1.setText("Local");
+        BoutonLocal.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        BoutonLocal.setText("Local");
+        BoutonLocal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonLocalActionPerformed(evt);
+            }
+        });
+
+        BoutonCompetition.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        BoutonCompetition.setText("Competition");
+        BoutonCompetition.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonCompetitionActionPerformed(evt);
+            }
+        });
+
+        BoutonVille.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        BoutonVille.setText("Ville");
+        BoutonVille.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonVilleActionPerformed(evt);
+            }
+        });
+
+        BoutonStage.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        BoutonStage.setText("Stages");
+        BoutonStage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonStageActionPerformed(evt);
+            }
+        });
+
+        BoutonPassageDeGrade.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        BoutonPassageDeGrade.setText("Passage De Grade");
+        BoutonPassageDeGrade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonPassageDeGradeActionPerformed(evt);
+            }
+        });
+
+        BoutonMoniteur.setText("Moniteurs");
+        BoutonMoniteur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonMoniteurActionPerformed(evt);
+            }
+        });
+
+        BoutonEleve.setText("Eleves");
+        BoutonEleve.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonEleveActionPerformed(evt);
+            }
+        });
+
+        BoutonCategorie.setText("Categorie");
+        BoutonCategorie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BoutonCategorieActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("Cours");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jButton2.setText("Competition");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jButton3.setText("Ville");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton5.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jButton5.setText("Stages");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-
-        jButton6.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jButton6.setText("Passage De Grade");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-
-        jButton7.setText("Moniteurs");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-
-        jButton8.setText("Eleves");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
+        jDesktopPane1.setLayer(BoutonLocal, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(BoutonCompetition, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(BoutonVille, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(BoutonStage, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(BoutonPassageDeGrade, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(BoutonMoniteur, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(BoutonEleve, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(BoutonCategorie, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jButton5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jButton6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jButton7, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jButton8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -135,35 +158,43 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton6)
-                    .addComponent(jButton5)
+                    .addComponent(BoutonPassageDeGrade)
+                    .addComponent(BoutonStage)
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addComponent(jButton7)
+                        .addComponent(BoutonMoniteur)
                         .addGap(62, 62, 62)
-                        .addComponent(jButton8))
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
-                .addContainerGap(760, Short.MAX_VALUE))
+                        .addComponent(BoutonEleve))
+                    .addComponent(BoutonVille)
+                    .addComponent(BoutonCompetition)
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addComponent(BoutonLocal)
+                        .addGap(140, 140, 140)
+                        .addComponent(jButton1))
+                    .addComponent(BoutonCategorie, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(702, Short.MAX_VALUE))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jButton1)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BoutonLocal)
+                    .addComponent(jButton1))
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(BoutonCompetition)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(BoutonVille)
                 .addGap(22, 22, 22)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8))
+                    .addComponent(BoutonMoniteur)
+                    .addComponent(BoutonEleve))
                 .addGap(18, 18, 18)
-                .addComponent(jButton5)
+                .addComponent(BoutonStage)
                 .addGap(18, 18, 18)
-                .addComponent(jButton6)
-                .addContainerGap(423, Short.MAX_VALUE))
+                .addComponent(BoutonPassageDeGrade)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BoutonCategorie)
+                .addContainerGap(389, Short.MAX_VALUE))
         );
 
         jMenu1.setText("Fichier");
@@ -214,7 +245,7 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BoutonLocalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonLocalActionPerformed
         // Bouton Local
    // jDesktopPane1.removeAll();
     JIFLocal f = new JIFLocal();
@@ -229,9 +260,9 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
 
 
     jDesktopPane1.repaint();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BoutonLocalActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void BoutonPassageDeGradeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonPassageDeGradeActionPerformed
         // TODO add your handling code here:
         //bouton passage de grade
         
@@ -242,15 +273,15 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
             f.setVisible(true);
             
         } catch (PropertyVetoException ex) {
-            Logger.getLogger(JIFVille.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JIFPassageDeGrade.class.getName()).log(Level.SEVERE, null, ex);
         }
 
 
     jDesktopPane1.repaint();
                          
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_BoutonPassageDeGradeActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void BoutonVilleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonVilleActionPerformed
         // bouton Ville
         //jDesktopPane1.removeAll();
     JIFVille f = new JIFVille();
@@ -265,9 +296,9 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
 
 
     jDesktopPane1.repaint();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_BoutonVilleActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BoutonCompetitionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonCompetitionActionPerformed
         // bouton competition
         JIFCompetition f = new JIFCompetition();
     jDesktopPane1.add(f);
@@ -281,9 +312,9 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
 
 
     jDesktopPane1.repaint();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BoutonCompetitionActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void BoutonStageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonStageActionPerformed
         // Bouton Stage
           JIFStage f = new JIFStage();
     jDesktopPane1.add(f);
@@ -297,9 +328,9 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
 
 
     jDesktopPane1.repaint();
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_BoutonStageActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void BoutonMoniteurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonMoniteurActionPerformed
         // bouton Moniteurs
         
            JIFMoniteur f = new JIFMoniteur();
@@ -315,9 +346,9 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
 
     jDesktopPane1.repaint();
         
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_BoutonMoniteurActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void BoutonEleveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonEleveActionPerformed
         // bouton Eleve
         
            JIFEleve f = new JIFEleve();
@@ -332,7 +363,45 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
 
 
     jDesktopPane1.repaint();
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_BoutonEleveActionPerformed
+
+    private void BoutonCategorieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BoutonCategorieActionPerformed
+        // Bouton Categorie
+        
+                
+           JIFCategorie f = new JIFCategorie();
+    jDesktopPane1.add(f);
+        try {
+            f.setMaximum(true);
+            f.setVisible(true);
+            
+        } catch (PropertyVetoException ex) {
+            Logger.getLogger(JIFCategorie.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+
+    jDesktopPane1.repaint();
+        
+    }//GEN-LAST:event_BoutonCategorieActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        //bouton Cours
+        
+        JIFCours f = new JIFCours();
+         jDesktopPane1.add(f);
+        try {
+            f.setMaximum(true);
+            f.setVisible(true);
+            
+        } catch (PropertyVetoException ex) {
+            Logger.getLogger(JIFCours.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+
+    jDesktopPane1.repaint();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -370,13 +439,15 @@ public class AcceuilDragonsBleus extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BoutonCategorie;
+    private javax.swing.JButton BoutonCompetition;
+    private javax.swing.JButton BoutonEleve;
+    private javax.swing.JButton BoutonLocal;
+    private javax.swing.JButton BoutonMoniteur;
+    private javax.swing.JButton BoutonPassageDeGrade;
+    private javax.swing.JButton BoutonStage;
+    private javax.swing.JButton BoutonVille;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
