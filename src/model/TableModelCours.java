@@ -28,6 +28,7 @@ public class TableModelCours extends javax.swing.table.AbstractTableModel {
     public Object getValueAt(int row, int col) {
         
         Cours cou = myList.get(row);
+        System.out.println(cou.getIdLocal().getNomLocal());
         switch (col)
         {
             case 0 :    return cou.getIdCours();
