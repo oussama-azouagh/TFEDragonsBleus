@@ -26,6 +26,7 @@ public class JIFStage extends javax.swing.JInternalFrame {
      */
     public JIFStage() {
         initComponents();
+        refreshModel();
     }
 
     /**
@@ -191,6 +192,7 @@ public class JIFStage extends javax.swing.JInternalFrame {
             if (rep == JOptionPane.YES_OPTION)
                 daoStage.deleteStage((int)myModel.getValueAt(TableStage.convertRowIndexToModel(TableStage.getSelectedRow()),0));
             // après la suppression : rafraîchir les données en relisant la BD
+            
             refreshModel();
             this.refreshModel();
         }
