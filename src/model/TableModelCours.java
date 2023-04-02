@@ -26,9 +26,9 @@ public class TableModelCours extends javax.swing.table.AbstractTableModel {
     }
 
     public Object getValueAt(int row, int col) {
-        
+
         Cours cou = myList.get(row);
-        System.out.println(cou.getIdLocal().getNomLocal());
+
         switch (col)
         {
             case 0 :    return cou.getIdCours();
@@ -36,7 +36,7 @@ public class TableModelCours extends javax.swing.table.AbstractTableModel {
             case 2 :    return cou.getHeureDebut();
             case 3 :    return cou.getHeureFin();
             case 4 :    return cou.getJours();
-            case 5 :    return cou.getIdLocal().getNomLocal();// meme nom que cours
+            case 5 :    return cou.getIdLocal().getNomLocal();// IDLocal au lieu du nom
             
             default :   return null;
         }
@@ -47,18 +47,18 @@ public class TableModelCours extends javax.swing.table.AbstractTableModel {
         return getValueAt(0, c).getClass();
     }
     
-    public void setMyList (ArrayList myList)
+    public void setMyList(ArrayList myList)
     {
         this.myList = myList;
         this.fireTableDataChanged();
     }
     
-    public ArrayList <Cours> getMyList ()
+    public ArrayList <Cours> getMyList()
     {
         return myList;
     }
     
-    public Cours getMyList (int index)
+    public Cours getMyList(int index)
     {
         return myList.get(index);
     }

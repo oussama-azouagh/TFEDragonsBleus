@@ -5,9 +5,10 @@
         <group>
             <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/src/model/TableModelMoniteur.java</file>
             <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/src/model/TableModelEleve.java</file>
-            <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/src/daoMySQL/DAOEleveMySQL.java</file>
-            <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/src/presentation/JIFMoniteur.java</file>
-            <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/src/presentation/JIFEleve.java</file>
+            <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/.git/config</file>
+            <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/src/model/TableModelCours.java</file>
+            <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/src/presentation/GUIEleve/JIFEleve.java</file>
+            <file>file:/C:/Users/MediaMonster/Desktop/aide%20tfe/TFEDragonsBleus/src/presentation/GUICours/JIFCours.java</file>
         </group>
     </open-files>
 </project-private>

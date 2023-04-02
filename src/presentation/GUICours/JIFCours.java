@@ -6,6 +6,7 @@
 package presentation.GUICours;
 
 import dao.DAOCours;
+import dao.DAOLocal;
 import factory.Factory;
 import model.TableModelCours;
 import java.beans.PropertyVetoException;
@@ -29,6 +30,7 @@ public class JIFCours extends javax.swing.JInternalFrame {
      */
     public JIFCours() {
         initComponents();
+        refreshModel();
         
     }
 
@@ -145,7 +147,8 @@ public class JIFCours extends javax.swing.JInternalFrame {
                     myModel.getValueAt(TableCours.convertRowIndexToModel(TableCours.getSelectedRow()),0) + " ?", "Confirmation", JOptionPane.YES_NO_OPTION);
             if (rep == JOptionPane.YES_OPTION)
                 daoCours.deleteCours((int)myModel.getValueAt(TableCours.convertRowIndexToModel(TableCours.getSelectedRow()),0));
-            // après la suppression : rafraîchir les données en relisant la BD
+            
+// après la suppression : rafraîchir les données en relisant la BD
             refreshModel();
             myModel.getMyList();
         }
@@ -182,6 +185,7 @@ public class JIFCours extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 private DAOCours daoCours = Factory.getDAOCours();
+private DAOLocal daoLocal = Factory.getDAOLocal();
 private TableModelCours myModel = new model.TableModelCours(daoCours.selectCours());
 
 

@@ -48,12 +48,12 @@ public class TableModelEleve extends javax.swing.table.AbstractTableModel {
             case 6 :    return elv.isAssurance();
             case 7 :    return elv.getGrade();
             case 8 :    return elv.getMail();
-           // case 9 :    return elv.getIdCategorie().getDescription();
-           // case 10 :   return elv.getIdAdresse().getNomAdresse();
-           // case 11 :   return elv.getIdAdresse().getNumero();
-           // case 12 :   return elv.getIdAdresse().getBoite();
-           // case 13 :   return elv.getIdAdresse().getCodePostal();
-           // case 14 :   return elv.getIdAdresse().getIdVille().getIdVille();
+            case 9 :    return elv.getIdCategorie().getDescription();
+            case 10 :   return elv.getIdAdresse().getNomAdresse();
+            case 11 :   return elv.getIdAdresse().getNumero();
+            case 12 :   return elv.getIdAdresse().getBoite();
+            case 13 :   return elv.getIdAdresse().getCodePostal();
+            case 14 :   return elv.getIdAdresse().getIdVille().getIdVille();
                
             default :   return null;
         }

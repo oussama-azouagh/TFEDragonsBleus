@@ -42,7 +42,7 @@ public class TableModelMoniteur extends javax.swing.table.AbstractTableModel {
             case 6 :    return moni.isAssurance();
             case 7 :    return moni.getGrade();
             case 8 :    return moni.getMail();
-            case 9 :    return moni.getIdAdresse().getIdAdresse();
+            case 9 :    return moni.getIdAdresse().getNomAdresse().toString();
             //case 10 :   return moni.getIdAdresse().getNumero();
            // case 11 :   return moni.getIdAdresse().getBoite();
            // case 12 :   return moni.getIdAdresse().getCodePostal();

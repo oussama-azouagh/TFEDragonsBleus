@@ -99,6 +99,7 @@ public class JIFLocal extends javax.swing.JInternalFrame {
         });
 
         ListLocal.setModel(myModel);
+        ListLocal.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         ListLocal.setMinimumSize(new java.awt.Dimension(1000, 900));
         ScrollPaneLocal.setViewportView(ListLocal);
 

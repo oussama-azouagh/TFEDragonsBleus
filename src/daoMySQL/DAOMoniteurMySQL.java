@@ -35,14 +35,17 @@ public class DAOMoniteurMySQL implements DAOMoniteur{
                 + "From Moniteur M, Adresse A, Ville V Where M.idAdresse = A.idAdresse "
                 + "And A.idVille = V.idVille"; **/
        
-            String request = "Select * From  Moniteur, Adresse";
+            String request = "Select * From  Moniteur join (Select * from Adresse) Adresse on Moniteur.idAdresse = Adresse.idAdresse";
         ResultSet resu = DAOConnexionMySQL.getInstance().selectQuery (request);
         try {
             while (resu.next())
             {
                 myList.add (new Moniteur(resu.getInt(1), resu.getString(2), resu.getString(3),
                     resu.getDate(4), resu.getInt(5),resu.getInt(6), 
-                    resu.getBoolean(7),resu.getString(8), resu.getString(9), new Adresse(resu.getInt(10)) ));
+                    resu.getBoolean(7),resu.getString(8), resu.getString(9),
+                   new Adresse(resu.getInt(11),resu.getString(12),resu.getInt(13),resu.getString(14),resu.getInt(15),
+                   new Ville(resu.getInt(16),null) )));
+                
             }
         }
         catch (SQLException e)

@@ -65,6 +65,14 @@ public class JIFEleve extends javax.swing.JInternalFrame {
             }
         });
 
+        TableEleve.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
         TableEleve.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane1.setViewportView(TableEleve);
 
@@ -124,7 +132,7 @@ public class JIFEleve extends javax.swing.JInternalFrame {
 
     private void boutonEleveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boutonEleveActionPerformed
         // bouton precedent
-        this.dispose(); 
+        this.dispose();
     }//GEN-LAST:event_boutonEleveActionPerformed
 
 

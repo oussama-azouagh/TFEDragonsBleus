@@ -28,13 +28,13 @@ public class DAOCoursMySQL implements DAOCours{
     public ArrayList <Cours> selectCours ()
     {
         ArrayList <Cours> myList = new ArrayList();
-        String request = "Select * from Cours, Local";
+        String request = "Select * From  cours join (Select * from local) local on cours.idlocal = local.idlocal";
         ResultSet resu = DAOConnexionMySQL.getInstance().selectQuery (request);
         try {
             while (resu.next()) 
             {
-                myList.add (new Cours (resu.getInt("IdCours"), resu.getString("Nom"), resu.getString("HeureDebut"),
-                    resu.getString("HeureFin"), resu.getString("Jour") ,new Local(resu.getInt("IdLocal"),resu.getString("Nom") ) ));
+                myList.add (new Cours (resu.getInt(1), resu.getString(2), resu.getString(3),
+                    resu.getString(4), resu.getString(5) ,new Local(resu.getInt(6),resu.getString(7) ) ));
             }
         }
         catch (SQLException e)
